@@ -1,0 +1,5 @@
+{
+  "Webpack": "Webpack is a JavaScript module bundler",
+  "Node.js": "Originally Javascript could only be run on browsers. Node.js is a run-time environment that allows javascript to be run on a server or local machine.",
+  "Babel": "Transpiles ES6 javascript to ES5, which browsers can understand"
+}
