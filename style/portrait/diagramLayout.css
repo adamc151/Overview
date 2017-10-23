@@ -1,0 +1,44 @@
+.title{
+  text-align: center;
+}
+
+.diagramRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.modalContainer {
+  width: 100%;
+  height: 100%;
+}
+
+button:hover, button.hovered {
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+  cursor: pointer;
+}
+
+button {
+    position: relative;
+    border-radius: 4px;
+    background-color: white;
+    border-width: 1px;
+    border-color: lightgrey;
+    font-family: 'Alegreya Sans SC';
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+button:focus{
+  outline: none;
+}
+
+.AppButton1:hover{
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+  .AppButton2: hover;
+}

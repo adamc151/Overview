@@ -1,0 +1,66 @@
+.diagram {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 150%;
+}
+
+.nodecontainer{
+  position: relative;
+  width: 60%;
+  height: 40%;
+}
+
+
+.NodeJsButton{
+  position: relative;
+  line-height: 22px;
+  width: 100%;
+  height: 100%;
+}
+
+.AppButton1 {
+  position: absolute;
+  left: 35%;
+  top: 5%;
+  width: 30%;
+  height: 40%;
+}
+
+.NodeRow2Col1 {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  width: 40%;
+  height: 45%;
+}
+
+.NodeRow2Col2 {
+  position: absolute;
+  left: 55%;
+  top: 50%;
+  width: 40%;
+  height: 45%;
+}
+
+
+.ExpressServerButton {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: solid;
+  border-width: thin;
+  border-color: grey;
+}
+
+.AppButton2 {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 80%;
+  height: 60%;
+}

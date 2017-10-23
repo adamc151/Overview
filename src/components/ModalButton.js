@@ -1,7 +1,7 @@
 import React from 'react';
-import ReactModal from 'react-modal';
+import Modal from 'react-modal';
 
-export default class Modal extends React.Component {
+export default class ModalButton extends React.Component {
 
   constructor () {
     super();
@@ -22,14 +22,32 @@ export default class Modal extends React.Component {
   }
 
 
+
   render () {
 
+    var styles = {
+      width: "100%",
+      height: "100%",
+    }
+
+    if(this.props.alignText){
+      styles.justifyContent = "flex-start";
+    }
+
+
+
     return (
-      <div>
+      <div className={this.props.className}>
+        <button
+          className={`${this.props.className}--button`}
+          onClick={this.handleOpenModal}
+          style={styles}
+          onMouseOver={this.props.callback}
+          onMouseOut={this.props.callback}>
+          <label>{this.props.title}</label>
+        </button>
 
-        <button onClick={this.handleOpenModal}>{this.props.title}</button>
-
-        <ReactModal
+        <Modal
            isOpen={this.state.showModal}
            contentLabel="Minimal Modal Example"
            className="Modal"
@@ -38,7 +56,7 @@ export default class Modal extends React.Component {
           <button onClick={this.handleCloseModal}>Close</button>
           <h2>{this.props.title}</h2>
           <p>{this.props.description}</p>
-        </ReactModal>
+        </Modal>
       </div>
     );
   }
