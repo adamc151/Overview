@@ -44,7 +44,7 @@ export default class ModalButton extends React.Component {
           style={styles}
           onMouseOver={this.props.callback}
           onMouseOut={this.props.callback}>
-          <label>{this.props.title}</label>
+          <label>{this.props.noTitle ? null : this.props.title}</label>
         </button>
 
         <Modal
@@ -53,9 +53,11 @@ export default class ModalButton extends React.Component {
            className="Modal"
            //overlayClassName="Overlay"
         >
-          <button onClick={this.handleCloseModal}>Close</button>
-          <h2>{this.props.title}</h2>
-          <p>{this.props.description}</p>
+          <div className="modalContent">
+            <button onClick={this.handleCloseModal}>Close</button>
+            <h2>{this.props.title}</h2>
+            <p>{this.props.description}</p>
+          </div>
         </Modal>
       </div>
     );

@@ -18,11 +18,16 @@ export default class App extends Component {
     return (
       <div className='App'>
 
-        <div className='diagram'>
+        <div className='OverViewTitle'>
+          <h3>Overview</h3>
+          <p>This is an overview of the isomorphic structure of the app.</p>
+        </div>
 
+        <div className='diagram'>
           <div className='nodecontainer'>
 
-            <ModalButton title='Node.js' description={Info["NodeJS"]} className='NodeJsButton' />
+            <ModalButton title='Node.js' description={Info["NodeJS"]} className='NodeJsButton' noTitle={true} />
+            <label className='NodeLabel'>Node.JS</label>
             <ModalButton title='App' description={Info["App"]} className='AppButton1' callback={this.callback} />
 
             <div className='NodeRow2Col1'>

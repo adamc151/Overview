@@ -7,7 +7,7 @@
 .Row4Col1 {
   position: absolute;
   left: 5%;
-  top: 50%;
+  top: 0;
   width: 40%;
   height: 100%;
   border: solid;
@@ -17,7 +17,7 @@
 .Row4Col2 {
   position: absolute;
   left: 55%;
-  top: 50%;
+  top: 0;
   width: 40%;
   height: 100%;
   border: solid;
