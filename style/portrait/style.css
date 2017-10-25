@@ -8,13 +8,13 @@ button, label {
   font-family: 'Alegreya Sans SC';
 }
 
-.App {
-  margin-left: 0%;
+.IsomorphicDiagram {
   background-color: white;
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  height: 80%;
 }
 
+/*
 @media (min-width: 320px) {
     .App {
         width: 320px;
@@ -43,7 +43,7 @@ button, label {
         font-size: 16px;
         height: 100%;
     }
-}
+}*/
 
 .Modal {
     position: absolute;
@@ -56,7 +56,6 @@ button, label {
     border-width: 1px;
     border-radius: 10px;
     background-color: white;
-    opacity: 0.8;
   }
 
 .Modal:focus {
@@ -69,7 +68,8 @@ button, label {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rebeccapurple;
+  /*background-color: rebeccapurple;*/
+  /*background-color: #F0F0F0;*/
 }
 
 .Sidebar{

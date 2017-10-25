@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import ModalButton from './ModalButton.js';
+import AppDiagram from './AppDiagram.js';
 
 var Info = require('../messages/info.json');
 
-export default class App extends Component {
-
+export default class IsomorphicDiagram extends Component {
 
   callback(){
     $(".AppButton1--button").toggleClass("hovered");
@@ -12,35 +12,29 @@ export default class App extends Component {
     $(".AppButton3--button").toggleClass("hovered");
   }
 
-
   render() {
 
     return (
-      <div className='App'>
-
-        <div className='OverViewTitle'>
-          <h3>Overview</h3>
-          <p>This is an overview of the isomorphic structure of the app.</p>
-        </div>
+      <div className='IsomorphicDiagram'>
 
         <div className='diagram'>
           <div className='nodecontainer'>
 
-            <ModalButton title='Node.js' description={Info["NodeJS"]} className='NodeJsButton' noTitle={true} />
+            <ModalButton title='Node.js' description={Info["Node.js"]} className='NodeJsButton' />
             <label className='NodeLabel'>Node.JS</label>
-            <ModalButton title='App' description={Info["App"]} className='AppButton1' callback={this.callback} />
+            <ModalButton title='App' buttonTitle='App' description={Info["App"]} className='AppButton1' callback={this.callback} content={<AppDiagram />} />
 
             <div className='NodeRow2Col1'>
               <div className='ExpressServerButton'>
                 Render to DOM
-                <ModalButton title='App' description={Info["Webpack"]} className='AppButton2' callback={this.callback} />
+                <ModalButton title='App' buttonTitle='App' description={Info["Webpack"]} className='AppButton2' callback={this.callback} />
               </div>
             </div>
 
             <div className='NodeRow2Col2'>
               <div className='ExpressServerButton'>
                 Render to HTML string
-                <ModalButton title='App' description={Info["App"]} className='AppButton2' callback={this.callback} />
+                <ModalButton title='App' buttonTitle='App' description={Info["App"]} className='AppButton2' callback={this.callback} />
               </div>
             </div>
 
@@ -48,8 +42,8 @@ export default class App extends Component {
 
           <div className='Row2'>
             <div className='WebpackGroup'>
-              <ModalButton title='Webpack' description={Info["Webpack"]} className='WebpackButton' alignText={true} />
-              <ModalButton title='Babel' description={Info["Babel"]} className='BabelButton' />
+              <ModalButton title='Webpack' buttonTitle='Webpack' description={Info["Webpack"]} className='WebpackButton' alignText={true} />
+              <ModalButton title='Babel'  buttonTitle='Babel' description={Info["Babel"]} className='BabelButton' />
             </div>
           </div>
 
@@ -58,18 +52,6 @@ export default class App extends Component {
               <div className='ClientJS'>client.js</div>
               <div className='ServerJS'>server.js</div>
             </div>
-          </div>
-
-
-
-          <div className='Row4'>
-
-            <div className='Row4Col1'>
-            </div>
-
-            <div className='Row4Col2'>
-            </div>
-
           </div>
 
 

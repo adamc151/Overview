@@ -1,0 +1,16 @@
+.AppDiagram {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.AppDiagram__app{
+  width: 50%;
+  border: solid;
+}
+
+.AppDiagram__yos{
+  width: 30%;
+  border: solid;
+}

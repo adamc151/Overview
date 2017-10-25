@@ -44,26 +44,20 @@ export default class ModalButton extends React.Component {
           style={styles}
           onMouseOver={this.props.callback}
           onMouseOut={this.props.callback}>
-          <label>{this.props.buttonTitle}</label>
+          <label>{this.props.noTitle ? null : this.props.title}</label>
         </button>
 
         <Modal
            isOpen={this.state.showModal}
            contentLabel="Minimal Modal Example"
            className="Modal"
-           overlayClassName="Overlay"
+           //overlayClassName="Overlay"
         >
-
           <div className="modalContent">
-            <div className="modalHeading">
-              <h4>{this.props.title}</h4>
-              <div>{this.props.description}</div>
-            </div>
-            {this.props.content}
+            <button onClick={this.handleCloseModal}>Close</button>
+            <h2>{this.props.title}</h2>
+            <p>{this.props.description}</p>
           </div>
-
-          <button onClick={this.handleCloseModal} className="closeModalButton">Close</button>
-
         </Modal>
       </div>
     );

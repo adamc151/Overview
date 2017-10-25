@@ -1,6 +1,7 @@
 {
-  "App": "This is the App yo",
+  "App": "The App is made from reusable react components from the YOS package (YNAP Open Source)",
   "Webpack": "Webpack is a JavaScript module bundler",
   "Node.js": "Originally Javascript could only be run on browsers. Node.js is a run-time environment that allows javascript to be run on a server or local machine.",
-  "Babel": "Transpiles ES6 javascript to ES5, which browsers can understand"
+  "Babel": "Transpiles ES6 javascript to ES5, which browsers can understand",
+  "Isomorphic Development": "The App is isomorphic. Isomorphic JavaScript apps are JavaScript applications that can run both client-side and server-side. The backend and frontend share the same code. The first request made by the web browser is processed by the server while subsequent requests are processed by the client."
 }

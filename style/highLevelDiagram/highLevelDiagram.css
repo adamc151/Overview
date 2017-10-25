@@ -1,0 +1,60 @@
+.myContainer{
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/WORLD.jpg');
+}
+
+.HighLevelDiagram{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.Client{
+  text-align: center;
+  position: relative;
+  width: 20%;
+  height: 30%;
+  background-color: white;
+  border: solid;
+  border-width: 1px;
+  border-color: grey;
+}
+
+.Server{
+  text-align: center;
+  position: relative;
+  width: 25%;
+  height: 40%;
+  background-color: white;
+  border: solid;
+  border-width: 1px;
+  border-color: grey;
+}
+
+.ClientAppModal{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+}
+
+.ServerAppModal{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+}
+
+.ClientAppModal--button {
+  background-size: 100%;
+  background-image: url('../images/homepage.png');
+}
+
+.ServerAppModal--button {
+  background-color: #F0F0F0;
+}
